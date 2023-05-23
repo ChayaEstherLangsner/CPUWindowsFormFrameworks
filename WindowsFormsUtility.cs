@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CPUWindowsFormFramework
 {
     public class WindowsFormsUtility
-    {
+    { 
         public static void SetListBinding(ComboBox lst, DataTable sourcedt, DataTable targetdt, string tablename)
         {
             lst.DataSource = sourcedt;
