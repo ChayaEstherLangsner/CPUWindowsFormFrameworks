@@ -7,7 +7,7 @@ namespace CPUWindowsFormFramework
         public static void SetListBinding(ComboBox lst, DataTable sourcedt, DataTable? targetdt, string tablename)
         {
             lst.DataSource = sourcedt;
-            lst.ValueMember = tablename + "ID";
+            lst.ValueMember = tablename + "Id";
             lst.DisplayMember = lst.Name.Substring(3);
             if (targetdt != null)
             {
@@ -55,7 +55,7 @@ namespace CPUWindowsFormFramework
             grid.RowHeadersWidth = 25;
             foreach (DataGridViewColumn col in grid.Columns)
             {
-                if (col.Name.EndsWith("Id"))
+                if (col.Name.EndsWith("Id") )
                     {
                     col.Visible = false;
                 }
@@ -79,6 +79,7 @@ namespace CPUWindowsFormFramework
             }
             return id;
         }
+
         public static int GetIdFromComboBox(ComboBox lst)
         {
             int value = 0;
