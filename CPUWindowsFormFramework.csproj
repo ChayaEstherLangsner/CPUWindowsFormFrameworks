@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\repos\clangsner\RecordKeeper\RecordKeeperSystem\RecordKeeperSystem.csproj" />
     <ProjectReference Include="..\..\..\repos\recipe\RecipeApps\RecipeSystem\RecipeSystem.csproj" />
   </ItemGroup>
 
