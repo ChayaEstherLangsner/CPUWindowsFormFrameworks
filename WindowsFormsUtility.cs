@@ -11,6 +11,7 @@ namespace CPUWindowsFormFramework
             lst.DisplayMember = lst.Name.Substring(3);
             if (targetdt != null)
             {
+                lst.DataBindings.Clear();
                 lst.DataBindings.Add("SelectedValue", targetdt, lst.ValueMember, false, DataSourceUpdateMode.OnPropertyChanged);
             }
             }
@@ -36,6 +37,7 @@ namespace CPUWindowsFormFramework
 
             if (propertyname != "" && columnname != "")
             {
+                ctrl.DataBindings.Clear();
                 ctrl.DataBindings.Add(propertyname, bindsource, columnname, true, DataSourceUpdateMode.OnPropertyChanged);
             }
         }
